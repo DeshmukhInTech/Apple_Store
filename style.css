@@ -1,0 +1,233 @@
+/* ======================
+   1. Fonts
+====================== */
+@font-face {
+  font-family: text-regular;
+  src: url(resources/sf-pro-text_regular.woff2);
+}
+
+@font-face {
+  font-family: text-display;
+  src: url(resources/sf-pro-text_display.woff2);
+}
+
+@font-face {
+  font-family: text-wave;
+  src: url(resources/NestaMastone.ttf);
+}
+
+/* ======================
+   2. Reset & Global
+====================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: text-regular;
+}
+
+body {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ======================
+   3. Layout
+====================== */
+#main {
+  width: 100%;
+}
+
+/* ======================
+   4. Navigation
+====================== */
+#nav {
+  width: 100%;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  padding: 23px 0;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: #ffffffe8;
+}
+
+#nav h4 {
+  font-size: 12px;
+  font-weight: 200;
+}
+
+#nav i {
+  font-size: 16px;
+  line-height: 10px;
+}
+
+/* ======================
+   5. Hero Sections
+====================== */
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  background: #F5F5F7;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.hero-section h1 {
+  font-size: 56px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.hero-section h3 {
+  padding-top: 6px;
+  font-size: 27px;
+  font-weight: 100;
+  letter-spacing: -1px;
+}
+
+.hero-section a {
+  display: inline-block;
+  margin: 20px 6px;
+  padding: 10px 20px;
+  background-color: #0071E3;
+  border: 1px solid #0071E3;
+  color: white;
+  font-size: 16px;
+  border-radius: 30px;
+}
+
+.hero-section a:last-child {
+  background-color: transparent;
+  color: #0071E3;
+}
+
+.hero-section a:last-child:hover {
+  background-color: #0071E3;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* ======================
+   6. Section Overrides
+====================== */
+#hero-section {
+  padding-top: 80px;
+  background-image: url("resources/hero_iphone_family__fuz5j2v5xx6y_large.jpg");
+}
+
+#ipad-section {
+  margin-top: 12px;
+  background-image: url("resources/hero_ipad_air_avail__c34ycq52exg2_large.jpg");
+}
+
+#mac-section {
+  margin-top: 12px;
+  background-image: url("resources/hero_macbook_pro_m5__fjgmapbkxo2u_large.jpg");
+}
+
+#mac-section h1,
+#mac-section h3 {
+  color: white;
+}
+
+/* ======================
+   7. Flex Container
+====================== */
+.flex-container {
+  margin: 0 12px;
+  display: flex;
+  gap: 12px;
+}
+
+.flex-container .hero-section {
+  margin-top: 12px;
+}
+
+.flex-container h1 {
+  padding-top: 10px;
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.flex-container h3 {
+  padding-top: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  /* letter-spacing: 1px; */
+}
+
+.flex-container a {
+  display: inline-block;
+  margin: 20px 6px;
+  padding: 10px 18px;
+  background-color: #0071E3;
+  border: 1px solid #0071E3;
+  color: white;
+  font-size: 14px;
+  border-radius: 30px;
+}
+
+.flex-container a:last-child {
+  background-color: transparent;
+  color: #0071E3;
+}
+
+.flex-container a:last-child:hover {
+  background-color: #0071E3;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Watch Sections */
+#watch-section {
+  background-image: url("resources/promo_apple_watch_series_11__b63hxviqvonm_large.jpg");
+}
+
+#watch2-section {
+  background-image: url("resources/promo_apple_watch_unity__casvx9ysh1le_large.jpg");
+}
+
+#watch2-section h1,
+#watch2-section h3 {
+  color: white;
+}
+
+#watch2-section a {
+  color: black;
+  border-color: white;
+  background: #fff;
+}
+
+.flex-container #ipadpro-section {
+  color: white;
+  background-image: url("resources/promo_ipad_pro__c529dk533k4m_large.jpg");
+}
+
+.flex-container #airpods-section {
+  background-image: url("resources/promo_airpodspro_3__f6xmza7bglei_large.jpg");
+}
+
+.flex-container #trade-section {
+  background-image: url("resources/promo_iphone_tradein__bugw15ka691e_large.jpg");
+}
+
+.flex-container #card-section {
+  background-image: url("resources/promo_apple_card__5cm7draujpey_small.jpg");
+}
+
+#trade-section a {
+  color: white;
+  border-color: 0071E3;
+  background: #0071E3;
+}
