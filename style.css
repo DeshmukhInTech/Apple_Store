@@ -231,3 +231,18 @@ a {
   border-color: 0071E3;
   background: #0071E3;
 }
+
+.disclaimer {
+  margin-top: 12px;
+    background-color: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.disclaimer p {
+    max-width: 900px;
+    margin: auto;
+}
